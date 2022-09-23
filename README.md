@@ -32,3 +32,6 @@ Lucas Fernando Costa dos Santos
 
 https://www.linkedin.com/in/lucasf98/
 
+# Agradecimentos
+
+Agradeço a Sara Cardoso pela oportunidade.
