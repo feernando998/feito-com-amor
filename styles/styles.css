@@ -1,0 +1,479 @@
+.fonteTituloProdutos {
+  font-size: 22px;
+  padding-bottom: 10px;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 26px;
+}
+
+.fonteButtons,
+li {
+  padding-bottom: 8px;
+  font-family: Cambria, Georgia, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 25px;
+}
+
+p {
+  font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.fonteTitulo {
+  padding-top: 17px;
+  padding-bottom: 7px;
+  font-family: 'Arapey';
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+}
+
+.fonteSubtitulo {
+  font-family: 'Arapey';
+  font-size: 24px;
+  text-align: center;
+}
+
+.fonteFooter {
+  font-family: 'Arapey';
+  font-size: 20px;
+  margin: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: white !important
+}
+
+.fonteSobre {
+  font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 23px !important;
+  font-variant: normal;
+  font-weight: 600 !important;
+  line-height: 33px !important;
+  color: white !important;
+}
+
+.foto-perfil {
+  height: auto;
+  width: 25%;
+  max-width: auto;
+}
+
+.imagemCapa {
+  background-image: url(../imagens/capaCaderno.jpeg);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 0.5rem 0.5rem !important;
+}
+
+.imagensProdutos {
+  height: 350px;
+  width: 350px;
+  max-height: 350px;
+  max-width: 350px;
+  display: block;
+  border-radius: 0.4rem 0.4rem 0.4rem 0.4rem !important;
+}
+
+.icones {
+  margin-top: 15px;
+  margin-right: 2px;
+  font-size: 25px;
+  text-align: center !important;
+  color: #a00601;
+}
+
+.iconesInferiores{
+  margin-top: 0px;
+  margin-right: 2px;
+  font-size: 25px;
+  text-align: center !important;
+  color: #a00601;
+}
+
+.titulosBrancos {
+  text-decoration: underline;
+  text-underline-position: under;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+}
+
+.titulosVerdes {
+  text-decoration: underline;
+  text-underline-position: under;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #0aad85c4;
+}
+
+.titulosNavBar {
+  color: white !important;
+  text-transform: uppercase;
+  font-size: 20px !important;
+}
+
+.paragrafosBrancos {
+  color: white !important;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: black !important;
+}
+
+.corPrimaria {
+  background-color: #12833888 !important;
+}
+
+.corNavbar {
+  background-color: #6d0819;
+}
+
+.corButtonNavbar {
+  border-radius: 2rem 2rem !important;
+  border-width: 0.2rem !important;
+  background-color: #6d0819 !important;
+  border-color: rgba(255, 255, 255, 0.575) !important;
+}
+
+.itemMenu {
+  color: white;
+}
+
+.estiloButtons {
+  border-radius: 3rem !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  text-align: center !important;
+  width: 7.5rem;
+  height: 2.3rem;
+}
+
+.buttonContato {
+  margin-bottom: 4px;
+  padding: 4px;
+  text-align: center;
+  text-transform: capitalize;
+  transition: 0.3s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 35px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #ffa82d;
+  background-image: linear-gradient(45deg, #fcd603 0%, #F09819 51%, #f8fc2c 100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 10rem;
+  height: 2rem;
+  font-family: Cambria, Georgia, serif;
+  font-size: 17px;
+}
+
+.buttonContato:hover {
+  background-position: center right;
+  color: white;
+  text-decoration: none;
+}
+
+.buttonContato:active {
+  transform: scale(0.95);
+}
+
+.buttonTelegram {
+  position: fixed;
+  margin: 3px;
+  margin-top: 300px;
+  z-index: 5000;
+  bottom: 0px;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+}
+
+.bordaDiv {
+  border-radius: 0.5rem !important;
+  width: auto;
+  /*box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);*/
+}
+
+.bordaCadernoA5eA6 {
+  margin-bottom: 90px;
+}
+
+.bordaCadernoDiscoA6 {
+  margin-bottom: 40px;
+}
+
+.bordaCadernoKraftA6 {
+  margin-bottom: 40px;
+}
+
+.bordaCadernoArtesanal {
+  margin-bottom: 90px;
+}
+
+.bordaEvolucaoCadernos {
+  margin-bottom: 75px;
+}
+
+.bordaServicosMarketing {
+  margin-bottom: 117px;
+}
+
+@media screen and (max-width: 1199px){
+
+  .imagensProdutos {
+    height: 330px;
+  }
+
+  .bordaCadernoDiscoA6 {
+    margin-bottom: 40px;
+  }
+
+  .bordaCadernoKraftA6 {
+    margin-bottom: 0px;
+  }
+  
+  .bordaCadernoArtesanal {
+    margin-bottom: 66px;
+  }
+
+  .bordaMarcadoresPagina {
+    margin-bottom: 40px;
+  }
+
+  .bordaEvolucaoCadernos {
+    margin-bottom: 175px;
+  }
+  
+  .bordaServicosMarketing {
+    margin-bottom: 167px;
+  }
+
+}
+
+@media screen and (max-width: 991px){
+
+  .bordaCadernoA5eA6 {
+    margin-bottom: 66px;
+  }
+
+  .bordaCadernoDiscoA6 {
+    margin-bottom: 40px;
+  }
+
+  .bordaCadernoArtesanal {
+    margin-bottom: 115px;
+  }
+
+  .bordaEvolucaoCadernos {
+    margin-bottom: 98px;
+  }
+  
+  .bordaServicosMarketing {
+    margin-bottom: 0;
+  }
+
+}
+
+@media screen and (max-width: 770px){
+
+  .bordaCadernoA5eA6 {
+    margin-bottom: 66px;
+  }
+
+  .bordaCadernoA6 {
+    margin-bottom: 0px;
+  }
+
+  .bordaCadernoDiscoA6 {
+    margin-bottom: 40px;
+  }
+
+  .bordaCadernoKraftA6 {
+    margin-bottom: 0px;
+  }
+
+  .bordaCadernoArtesanal {
+    margin-bottom: 118px;
+  }
+
+  .bordaMarcadoresPagina {
+    margin-bottom: 43px;
+  }
+
+  .bordaEvolucaoCadernos {
+    margin-bottom: 100px;
+  }
+
+  .bordaServicosMarketing {
+    margin-bottom: 0px;
+  }
+
+  .buttonTelegram {
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+@media screen and (max-width: 767px){
+
+  .imagensProdutos {
+    width: auto !important;
+    height: 250px;
+  }
+
+  .bordaCadernoA5eA6 {
+    margin-bottom: 115px;
+  }
+
+  .bordaCadernoA6 {
+    margin-bottom: 0px;
+  }
+
+  .bordaCadernoDiscoA6 {
+    margin-bottom: 0px;
+  }
+
+  .bordaCadernoKraftA6 {
+    margin-bottom: 41px;
+  }
+
+  .bordaCadernoArtesanal {
+    margin-bottom: 142px;
+  }
+
+  .bordaMarcadoresPagina {
+    margin-bottom: 0;
+  }
+
+  .bordaEvolucaoCadernos {
+    margin-bottom: 148px;
+  }
+
+  .bordaServicosMarketing {
+    margin-bottom: 0px;
+  }
+
+  .buttonTelegram {
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+@media screen and (max-width: 575px){
+
+  .imagensProdutos {
+    max-width: 350px;
+    height: 350px !important;
+  }
+
+  .bordaDiv{
+    margin-left: 60px;
+    margin-right: 60px;
+    max-width: 350px;
+    min-width: 300px !important;
+    align-items: center !important;
+  }
+
+  .bordaCadernoA5eA6 {
+    margin-bottom: 0px;
+  }
+
+  .bordaCadernoKraftA6 {
+    margin-bottom: 0px;
+  }
+
+  .bordaCadernoArtesanal {
+    margin-bottom: 0px;
+  }
+
+  .bordaEvolucaoCadernos {
+    margin-bottom: 0px;
+  }
+  
+  .bordaServicosMarketing {
+    margin-bottom: 0px;
+  }
+
+  .foto-perfil {
+    margin-top: 1.6rem;
+    height: auto;
+    width: 30%;
+    min-width: 26% !important;
+  }
+
+  .imagemCapa{
+    background-size: cover;
+    background-position: 47.3%;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+
+  .buttonTelegram {
+    width: 50px;
+    height: 50px;
+  }
+
+  .bordaEmail {
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (max-width: 470px){
+
+  .bordaDiv{
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  .buttonTelegram {
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+@media screen and (max-width: 400px){
+
+  .imagensProdutos {
+    width: 100% !important;
+    object-fit: cover;
+  }
+
+  .bordaDiv{
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+    max-width: 320px;
+    align-items: center !important;
+  }
+
+  .buttonTelegram {
+    width: 30px;
+    height: 30px;
+  }
+
+}
