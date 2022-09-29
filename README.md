@@ -22,6 +22,7 @@ Aproveitando a oportunidade para expandir meus conhecimentos, me voluntariei par
 - HTML 
 - CSS
 - Bootstrap 4
+- JavaScript
 
 ## Implantação em produção
 - Front end web: Netlify
