@@ -1,3 +1,118 @@
+:root {
+  --darkColor: #202122;
+  --darkColor2: #2b2c2c;
+  --darkColor3: #323335;
+  --darkColor4: #424242;
+  --bordaColor: #333333;
+  --textColor: #fff;
+  --iconColor: #087bff;
+}
+
+body.dark {
+  background: var(--darkColor);
+}
+
+body.dark .corNavbar {
+  background: var(--darkColor2) !important;
+}
+
+body.dark .corButtonNavbar {
+  background-color: var(--darkColor2) !important;
+}
+
+body.dark .album {
+  background: var(--darkColor) !important;
+}
+
+body.dark .card-body {
+  background: var(--darkColor);
+  color: var(--textColor);
+}
+
+body.dark .iconesInferiores {
+  color: var(--iconColor);
+}
+
+body.dark .iconesInferiores:hover {
+  -webkit-transform: scale(0.1);
+  transform: scale(1.1);
+  transition: all 0.1s;
+}
+
+body.dark .corPrimaria {
+  background: var(--darkColor) !important;
+}
+
+body.dark .titulosVerdes {
+  color: var(--textColor) !important;
+}
+
+body.dark .bordaDiv {
+  background: var(--bordaColor) !important;
+  border-color: var(--bordaColor)!important;
+}
+
+body.dark .bordaSobre {
+  border-radius: 0.9rem !important;
+  width: auto;
+  border-color: var(--darkColor4) !important;
+}
+
+/*DARK MODE*/
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  visibility: hidden;
+  display: none;
+}
+
+.check {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 20px;
+  margin-top: 12px;
+  margin-left: 6px;
+  background: var(--textColor);
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: ease-in 0.5s;
+}
+
+.check:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: var(--darkColor);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+input[type="checkbox"]:checked~.check:before {
+  transform: translateX(-50px);
+}
+
+.check:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: var(--darkColor);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: 0.5s;
+  transform: translateX(50px);
+}
+
+input[type="checkbox"]:checked~.check:after {
+  transform: translateX(0px);
+}
+/*DARK MODE*/
+
 .fonteTituloProdutos {
   font-size: 22px;
   padding-bottom: 10px;
@@ -77,7 +192,7 @@ p {
   max-height: 350px;
   max-width: 350px;
   display: block;
-  border-radius: 0.3rem !important;
+  border-radius: 0.4rem 0.4rem 0.2rem 0.2rem !important;
 }
 
 .icones {
@@ -94,6 +209,12 @@ p {
   font-size: 25px;
   text-align: center !important;
   color: #a00601;
+}
+
+.iconesInferiores:hover, .icones:hover {
+  -webkit-transform: scale(0.1);
+  transform: scale(1.1);
+  transition: all 0.1s;
 }
 
 .titulosBrancos {
@@ -124,6 +245,16 @@ p {
   color: white !important;
 }
 
+.fixContainer {
+  margin-top: -40px;
+}
+
+.fixFooter {
+  margin:0px;
+  padding-top: 10px; 
+  padding-bottom: 10px;
+}
+
 .jumbotron {
   margin-bottom: 0px;
 }
@@ -134,6 +265,10 @@ html {
 
 p {
   color: black !important;
+}
+
+.fundoProjetos {
+  background-color: white !important;
 }
 
 .corPrimaria {
@@ -211,32 +346,37 @@ p {
 }
 
 .bordaDiv {
-  border-radius: 0.4rem !important;
+  border-radius: 0.5rem 0.5rem 0.3rem 0.3rem !important;
+  width: auto !important;
+}
+
+.bordaSobre {
+  border-radius: 0.9rem !important;
   width: auto;
 }
 
 .bordaCadernoA5eA6 {
-  margin-bottom: 90px;
+  margin-bottom: 66px;
 }
 
 .bordaCadernoDiscoA6 {
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .bordaCadernoKraftA6 {
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .bordaCadernoArtesanal {
-  margin-bottom: 90px;
+  margin-bottom: 91px;
 }
 
 .bordaEvolucaoCadernos {
-  margin-bottom: 75px;
+  margin-bottom: 74px;
 }
 
 .bordaServicosMarketing {
-  margin-bottom: 117px;
+  margin-bottom: 116px;
 }
 
 @media screen and (max-width: 1199px){
@@ -245,8 +385,12 @@ p {
     height: 330px;
   }
 
+  .bordaCadernoA5eA6 {
+    margin-bottom: 91px;
+  }
+
   .bordaCadernoDiscoA6 {
-    margin-bottom: 40px;
+    margin-bottom: 41px;
   }
 
   .bordaCadernoKraftA6 {
@@ -258,7 +402,7 @@ p {
   }
 
   .bordaMarcadoresPagina {
-    margin-bottom: 40px;
+    margin-bottom: 41px;
   }
 
   .bordaEvolucaoCadernos {
@@ -274,7 +418,7 @@ p {
 @media screen and (max-width: 991px){
 
   .bordaCadernoA5eA6 {
-    margin-bottom: 66px;
+    margin-bottom: 41px;
   }
 
   .bordaCadernoDiscoA6 {
@@ -298,7 +442,7 @@ p {
 @media screen and (max-width: 770px){
 
   .bordaCadernoA5eA6 {
-    margin-bottom: 66px;
+    margin-bottom: 41px;
   }
 
   .bordaCadernoA6 {
@@ -356,7 +500,7 @@ p {
   }
 
   .bordaCadernoKraftA6 {
-    margin-bottom: 41px;
+    margin-bottom: 42px;
   }
 
   .bordaCadernoArtesanal {
@@ -368,7 +512,7 @@ p {
   }
 
   .bordaEvolucaoCadernos {
-    margin-bottom: 148px;
+    margin-bottom: 149px;
   }
 
   .bordaServicosMarketing {
@@ -378,6 +522,11 @@ p {
   .buttonTelegram {
     width: 40px;
     height: 40px;
+  }
+
+  .check {
+    margin-left: 0;
+    margin-top: 2px;
   }
 
 }
@@ -395,7 +544,6 @@ p {
     margin-right: 60px;
     max-width: 350px;
     min-width: 300px !important;
-    align-items: center !important;
   }
 
   .bordaCadernoA5eA6 {
@@ -472,12 +620,11 @@ p {
     margin-left: 30px !important;
     margin-right: 30px !important;
     max-width: 320px;
-    align-items: center !important;
   }
 
   .buttonTelegram {
     width: 30px;
     height: 30px;
   }
-
+  
 }

@@ -41,6 +41,11 @@
         <li>
           <a href="#sobre-mim" class="nav-link titulosNavBar">Sobre mim</a>
         </li>
+        <li>
+          <label><input type="checkbox" name="mode" id="mode">
+            <span class="check"></span>
+          </label>
+        </li>
       </ul>
     </div>
   </nav>
@@ -56,19 +61,18 @@
       <a href="https://www.youtube.com/channel/UCBhwz37NODfylZlrifboNzg/featured"><i class="fab fa-youtube icones"></i></a>
     </div>
   </section>
-  
-  <div class="album py-5 bg-light" style="background-color: white !important;" id="projetos">
-    <div class="container" style="margin-top: -35px;">
+  <div class="album py-5 fundoProjetos" id="projetos">
+    <div class="container fixContainer">
       <h2 class="jumbotron-heading text-center titulosVerdes">Projetos</h2>
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-6 ">
+        <div class="col-lg-4 col-md-6 col-sm-6">
           <div class="card mb-4 box-shadow bordaDiv mx-auto">
             <img class="card-img-top imagensProdutos" src="imagens/cadernosA5eA6.webp" data-holder-rendered="true">
             <div class="card-body">
               <h5 class="card-text fonteTituloProdutos">Caderno A5 e A6</h5>
               <ul>
                 <li>Capa de papel madeira 180gr</li>
-                <li>50 folhas de papel reciclado</li>
+                <li>50 folhas de papel reciclado 75gr</li>
                 <li>Ótimo para anotações</li>
               </ul>
               <ul class="bordaCadernoA5eA6"></ul>
@@ -187,7 +191,7 @@
               <ul>
                 <li>De simples para chique</li>
                 <li>Capa com couro sintético</li>
-                <li>Foto em moldura vazada</li>
+                <li>Foto em moldura na capa</li>
               </ul>
               <ul class="bordaCadernoArtesanal"></ul>
               <div class="d-flex justify-content-between align-items-center">
@@ -336,7 +340,7 @@
     </div>
   </div>
   <!-- Sobre Mim -->
-  <section class="corPrimaria jumbotron text-center" id="sobre-mim">
+  <section class="corPrimaria jumbotron text-center border bordaSobre" id="sobre-mim">
     <div class="container">
       <h2 class="jumbotron-heading titulosBrancos">Sobre mim</h2>
       <p class="lead fonteSobre">
@@ -348,10 +352,10 @@
     </div>
   </section>
   <!-- Contato -->
-  <section class="" id="contato">
+  <section id="contato">
     <div>
       <div class="container-fluid text-center">
-        <h3 style="padding-top: 20px; padding-bottom: 30px;" class="text-center titulosVerdes">Dísponivel para Oportunidades</h3>
+        <h3 style="padding-top: 20px; padding-bottom: 30px;" class="text-center titulosVerdes">Contato para Oportunidades</h3>
         <a href="https://www.linkedin.com/in/sara-cardoso-2a136a1b6/"><i class="fab fa-linkedin iconesInferiores"></i></a>
         <a href="https://www.facebook.com/sara.cardoso.01"><i class="fab fa-facebook iconesInferiores"></i></a>
         <a href="https://www.instagram.com/saracardoso_feitocomamor/"><i class="fab fa-instagram iconesInferiores"></i></a>
@@ -371,7 +375,8 @@
     </a>
   </div>
   <footer class="text-center corNavbar" style="padding:0px; margin:0px">
-    <p class="fonteFooter" style="margin:0px; padding-top:10px; padding-bottom:10px"> Copyright 2022 | Feito com Amor®</p>
+    <p class="fonteFooter fixFooter"> Copyright 2022 | Feito com Amor®</p>
   </footer>
+  <script src="scripts.js"></script>
 </body>
 </html>
