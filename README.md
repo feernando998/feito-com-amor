@@ -10,12 +10,16 @@ O projeto foi um desenvolvimento voluntário para uma empresa do ramo de papelar
 Aproveitando a oportunidade para expandir meus conhecimentos, me voluntariei para o desenvolvimento do site, sempre buscando atender as necessidades da cliente. Como meu primeiro projeto web, foi um desafio, mas foi concluído com sucesso.
 
 ## Layout Mobile
-![Mobile 1](https://github.com/feernando998/feito-com-amor/blob/main/imagens/mobile1.jpg) ![Mobile 2](https://github.com/feernando998/feito-com-amor/blob/main/imagens/mobile2.jpg)
+![Mobile 1](https://github.com/feernando998/feito-com-amor/blob/main/imagens/mobile1.jpg) 
+![Mobile 2](https://github.com/feernando998/feito-com-amor/blob/main/imagens/mobile2.jpg)
+![Mobile 3](https://github.com/feernando998/feito-com-amor/blob/main/imagens/mobile3.jpg)
 
 ## Layout Web
 ![Web 1](https://github.com/feernando998/feito-com-amor/blob/main/imagens/desktop1.png)
 
 ![Web 2](https://github.com/feernando998/feito-com-amor/blob/main/imagens/desktop2.png)
+
+![Web 3](https://github.com/feernando998/feito-com-amor/blob/main/imagens/desktop3.png)
 
 # Tecnologias Utilizadas
 ## Front End
