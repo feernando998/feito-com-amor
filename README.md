@@ -12,14 +12,14 @@ Aproveitando a oportunidade para expandir meus conhecimentos, me voluntariei par
 ## Layout Mobile
 ![Mobile 1](https://github.com/feernando998/feito-com-amor/blob/main/imagens/mobile1.jpg) 
 ![Mobile 2](https://github.com/feernando998/feito-com-amor/blob/main/imagens/mobile2.jpg)
-![Mobile 3](https://github.com/feernando998/feito-com-amor/blob/main/imagens/mobile3.jpg)
+![Mobile 3](https://github.com/feernando998/feito-com-amor/blob/main/imagens/mobile3-darkmode.jpg)
 
 ## Layout Web
 ![Web 1](https://github.com/feernando998/feito-com-amor/blob/main/imagens/desktop1.png)
 
 ![Web 2](https://github.com/feernando998/feito-com-amor/blob/main/imagens/desktop2.png)
 
-![Web 3](https://github.com/feernando998/feito-com-amor/blob/main/imagens/desktop3.png)
+![Web 3](https://github.com/feernando998/feito-com-amor/blob/main/imagens/desktop3-darkmode.png)
 
 # Tecnologias Utilizadas
 ## Front End
