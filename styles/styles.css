@@ -322,7 +322,7 @@ input[type="checkbox"]:checked~.btn-dark:after {
   color: var(--corIconesCarrosel);
 }
 
-.btn-outline-success, .btn-outline-primary {
+.btn-outline-success, .btn-outline-primary, .btn-outline-warning {
   padding-bottom: 8px;
   font-family: Cambria, Georgia, serif;
   border-radius: 3rem !important;
@@ -408,6 +408,40 @@ input[type="checkbox"]:checked~.btn-dark:after {
   padding-top: 20px; 
   padding-bottom: 30px;
 }
+
+#contato label {
+  font-family: Cambria, Georgia, serif;
+  font-size: 20px;
+  font-variant: normal;
+  font-weight: 600;
+  color: var(--corPrincipal);
+}
+
+#contato input {
+  border-radius: 30px !important;
+  font-family: Cambria, Georgia, serif;
+  font-size: 20px;
+}
+
+#contato textarea {
+  border-radius: 20px !important;
+  height: 100px;
+  font-family: Cambria, Georgia, serif;
+  font-size: 20px;
+}
+
+#contato .form-group {
+  width: 500px;
+}
+
+#contato ::placeholder {
+  font-family: Cambria, Georgia, serif;
+  font-size: 17px;
+}
+
+#formulario {
+  margin-top: -30px;
+} 
 
 .iconesInferiores{
   margin-top: 0px;
@@ -725,6 +759,10 @@ footer p {
   #telegram img {
     width: 40px;
     height: 40px;
+  }
+
+  #contato .form-group {
+    width: auto;
   }
 
 }
