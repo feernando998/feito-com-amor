@@ -1,7 +1,10 @@
+/*Função de ativação modo escuro*/
 document.querySelector('#mode').addEventListener("click", (e) => {
     document.querySelector('body').classList.toggle('dark')
 })
 
+
+/*Função de confirmação de contato*/
 function validarContato(){
     var nome = document.forms["formContato"]["name"].value
 

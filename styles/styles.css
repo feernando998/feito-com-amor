@@ -1,4 +1,10 @@
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+
+html,
+body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -21,6 +27,10 @@ body.dark {
   background: var(--darkColor);
 }
 
+body.dark .estilo-capa-atelie {
+  background-image: url(/imagens/fundos/flowers-5587354_1920.png);
+}
+
 /* Navbar */
 body.dark .navbar {
   background-color: var(--darkColor1);
@@ -39,12 +49,16 @@ body.dark .btn-dark:after {
 }
 
 body.dark #nav-target .nav-link:hover {
-  color: rgba(150, 150, 150, 0.774) !important;
+  color: var(--corPrincipal) !important;
 }
 
 /* Fontes */
 body.dark h3 {
   color: var(--textColor) !important;
+}
+
+body.dark #novidades a:hover {
+  color: var(--corPrincipal) !important;
 }
 
 body.dark a {
@@ -93,6 +107,10 @@ body.dark footer {
   background-color: var(--darkColor1);
 }
 
+body.dark footer a:hover {
+  color: var(--corPrincipal) !important;
+}
+
 /* -- Fim Dark Mode -- */
 
 body {
@@ -101,7 +119,7 @@ body {
 
 /* Navbar */
 .estilo-navbar {
-  background: var(--corNavbar);
+  background-color: var(--corNavbar);
 }
 
 #nav-target a {
@@ -114,16 +132,16 @@ body {
 }
 
 .navbar-dark .navbar-nav {
-  text-transform: uppercase;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .navbar-brand {
-  color: var(--textColor);
-  text-transform: uppercase;
-  font-style: italic;
-  font-size: 20px;
-  font-family: 'Arapey';
+  font-family: Cambria, Georgia, serif;
+  font-size: 24px !important;
+}
+
+.navbar-brand:hover {
+  color: var(--corPrincipal) !important;
 }
 
 .navbar-dark .navbar-toggler {
@@ -144,7 +162,7 @@ input[type="checkbox"] {
   display: block;
   width: 40px;
   height: 20px;
-  margin-top: 13px;
+  margin-top: 16px;
   margin-left: 6px;
   background: var(--textColor) !important;
   cursor: pointer;
@@ -197,7 +215,7 @@ input[type="checkbox"]:checked~.btn-dark:after {
 }
 
 .estilo-capa {
-  background-image: url(../imagens/capaCaderno.jpeg);
+  background-image: url(../imagens/capaCaderno.webp) !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -210,8 +228,8 @@ input[type="checkbox"]:checked~.btn-dark:after {
 
 .imagem-perfil {
   height: auto;
-  width: 22%;
-  max-width: 22%;
+  width: 24%;
+  max-width: 24%;
 }
 
 #capa h1 {
@@ -279,6 +297,32 @@ input[type="checkbox"]:checked~.btn-dark:after {
   border-radius: 0.4rem 0.4rem 0.4rem 0.4rem !important;
 }
 
+#novidades {
+  font-family: Cambria, Georgia, serif;
+}
+
+#novidades h3 {
+  text-decoration: underline;
+  text-underline-position: under;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--corPrincipal);
+  line-height: 40px;
+}
+
+#novidades h4 {
+  text-decoration: underline;
+  text-underline-position: under;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--corPrincipal);
+  line-height: 40px;
+}
+
 #produtos {
   font-family: Cambria, Georgia, serif;
 }
@@ -322,7 +366,9 @@ input[type="checkbox"]:checked~.btn-dark:after {
   color: var(--corIconesCarrosel);
 }
 
-.btn-outline-success, .btn-outline-primary, .btn-outline-warning {
+.btn-outline-success,
+.btn-outline-primary,
+.btn-outline-warning {
   padding-bottom: 8px;
   font-family: Cambria, Georgia, serif;
   border-radius: 3rem !important;
@@ -371,7 +417,7 @@ input[type="checkbox"]:checked~.btn-dark:after {
 
 /* Sobre */
 #sobre {
-  background-image: linear-gradient(#12833871, #f19d17c4);
+  background-image: linear-gradient(to right bottom, #cd0000, #da4100, #e66400, #f08300, #f8a000, #ef9518, #e48b24, #d9812c, #ac5734, #753630, #3c1e21, #000000);
   border-radius: 0.9rem;
   width: auto;
   font-family: Cambria, Georgia, serif;
@@ -394,6 +440,7 @@ input[type="checkbox"]:checked~.btn-dark:after {
   font-weight: 400;
   line-height: 33px;
   color: var(--textColor);
+  text-align: justify;
 }
 
 #contato h3 {
@@ -405,45 +452,11 @@ input[type="checkbox"]:checked~.btn-dark:after {
   font-weight: 700;
   font-size: 32px;
   color: var(--corPrincipal);
-  padding-top: 20px; 
+  padding-top: 20px;
   padding-bottom: 30px;
 }
 
-#contato label {
-  font-family: Cambria, Georgia, serif;
-  font-size: 20px;
-  font-variant: normal;
-  font-weight: 600;
-  color: var(--corPrincipal);
-}
-
-#contato input {
-  border-radius: 30px !important;
-  font-family: Cambria, Georgia, serif;
-  font-size: 20px;
-}
-
-#contato textarea {
-  border-radius: 20px !important;
-  height: 100px;
-  font-family: Cambria, Georgia, serif;
-  font-size: 20px;
-}
-
-#contato .form-group {
-  width: 500px;
-}
-
-#contato ::placeholder {
-  font-family: Cambria, Georgia, serif;
-  font-size: 17px;
-}
-
-#formulario {
-  margin-top: -30px;
-} 
-
-.iconesInferiores{
+.iconesInferiores {
   margin-top: 0px;
   margin-right: 2px;
   font-size: 25px;
@@ -451,7 +464,9 @@ input[type="checkbox"]:checked~.btn-dark:after {
   color: var(--corIconesTopo);
 }
 
-.iconesInferiores:hover, .icones:hover {
+.iconesInferiores:hover,
+.icones:hover,
+.icones-atelie:hover {
   -webkit-transform: scale(0.1);
   transform: scale(1.1);
   transition: all 0.1s;
@@ -459,8 +474,8 @@ input[type="checkbox"]:checked~.btn-dark:after {
 
 #contato h4 {
   font-size: 24px;
-  text-transform: uppercase;
   font-weight: 600;
+  font-family: Cambria, Georgia, serif;
 }
 
 #contato a {
@@ -498,13 +513,22 @@ footer {
   padding-bottom: 8px;
   color: var(--textColor);
   padding: 0px;
-   margin: 0px;
+  margin: 0px;
 }
 
 footer p {
-  margin:0px;
-  padding-top: 10px; 
+  margin: 0px;
+  padding-top: 10px;
   padding-bottom: 10px;
+}
+
+footer a {
+  color: white;
+  text-decoration-line: underline;
+}
+
+footer a:hover {
+  color: var(--corPrincipal);
 }
 
 .card {
@@ -514,125 +538,383 @@ footer p {
   background: var(--textColor);
 }
 
-#cadernoA5eA6, card-body {
-  margin-bottom: 65px ;
+/* ------------ ATELIÊ ------------ */
+
+/* Capa */
+#capaAtelie {
+  height: 35rem;
+  font-family: 'Arapey';
 }
 
-#cadernoDiscoA6, card-body {
-  margin-bottom: 41px;
+.estilo-capa-atelie {
+  background-image: url(/imagens/fundos/cesar-couto-TIvFLeqZ4ec-unsplash.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0rem 0rem 2rem 2rem !important;
+  /*border: 1px solid #a1a1a1b2;*/
+  -webkit-box-shadow: 0px 0px 8px 2px #0000004f;
+  -moz-box-shadow: 0px 0px 8px 2px #0000004f;
+  box-shadow: 0px 0px 8px 2px #0000004f;
 }
 
-#cadernoKraftA6, card-body {
-  margin-bottom: 41px;
+.icones-atelie {
+  margin-top: 15px;
+  margin-right: 0px;
+  font-size: 28px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right top, #3d3d3d, #76536e, #c66375, #fe8553, #ffc500);
 }
 
-#cadernoArtesanal, card-body {
-  margin-bottom: 141px;
+.fundo {
+  background-image: url(/imagens/fundos/flowers-4931217.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#evolucaoCadernos, card-body {
-  margin-bottom: 0px;
+.fundo2 {
+  background-image: url(/imagens/fundos/art-2540641.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-#evolucaoCadernos, card-body {
+.jumbotron {
+  background-color: white !important;
+}
+
+.imagem-perfil-atelie {
+  margin-top: 3.5rem;
+  height: auto;
+  width: 24%;
+  max-width: 24%;
+}
+
+.estiliza-titulo-texto {
+  background-image: linear-gradient(to right top, #5e9de4, #88a4dc, #a4add3, #b7b8cb, #c4c4c4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.estiliza-texto {
+  background-image: linear-gradient(to right top, #4e97e8, #7695d3, #8a94be, #9495aa, #979797);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#resina {
+  padding: 3rem 1rem 0rem 1rem;
+  margin-top: -1.8rem;
+}
+
+#resina img {
+  margin-top: 6px;
   margin-bottom: 15px;
 }
 
-#servicosMarketing, card-body {
+#capaAtelie h1 {
+  font-family: 'Passions Conflict', cursive;
+  color: #363636;
+  padding-top: 20px;
+  padding-bottom: 3px;
+  font-size: 8rem;
+  font-weight: 500;
+  line-height: 3.5rem;
+  text-shadow: 2px 2px #d1d1d1;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+}
+
+#resina h2 {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: transparent;
+  margin-bottom: -0.7rem;
+}
+
+#descricaoResina p {
+  font-family: 'Sacramento', cursive;
+  font-weight: 700;
+  font-size: 2.7rem;
+  text-align: justify;
+  line-height: 35px;
+  /* superior | direita | inferior | esquerda */
+  padding: 1rem 0.2rem 0.9rem 0.2rem;
+  margin-top: -1.2rem;
+}
+
+#contatoAtelie h3 {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: transparent;
+  padding: 0.9rem;
+}
+
+#contatoAtelie label {
+  font-family: 'Sacramento', cursive;
+  font-size: 2.3rem;
+  font-variant: normal;
+  font-weight: 600;
+  color: var(--corPrincipal);
+}
+
+#contatoAtelie input {
+  border-radius: 30px !important;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+}
+
+#contatoAtelie textarea {
+  border-radius: 20px !important;
+  height: 100px;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+}
+
+#contatoAtelie .form-group {
+  width: 500px;
+}
+
+#contatoAtelie::placeholder {
+  font-family: 'Lora', serif;
+  font-size: 17px;
+}
+
+#formulario {
+  margin-top: -30px;
+}
+
+.img {
+  border-radius: 0.7rem;
+  -webkit-box-shadow: 0px 0px 6px 2px #00000052;
+  -moz-box-shadow: 0px 0px 6px 2px #00000052;
+  box-shadow: 0px 0px 6px 2px #00000052;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.img {
+  transition: .5s ease-in-out;
+}
+
+.img:hover {
+  filter: brightness(80%);
+}
+
+.img-carousel {
+  border-radius: 0.7rem;
+}
+
+.fa-angle-left, .fa-angle-right {
+  color: white;
+}
+
+/* ------------ FIM ATELIÊ ------------ */
+
+#cadernoA5eA6,
+card-body {
+  margin-bottom: 65px;
+}
+
+#cadernoDiscoA6,
+card-body {
+  margin-bottom: 41px;
+}
+
+#cadernoKraftA6,
+card-body {
+  margin-bottom: 41px;
+}
+
+#plannerSemanal, card-body {
+  margin-bottom: 41px;
+}
+
+#cadernoArtesanal,
+card-body {
+  margin-bottom: 66px;
+}
+
+#evolucaoCadernos,
+card-body {
+  margin-bottom: 99px;
+}
+
+#servicosMarketing,
+card-body {
   margin-bottom: 116px;
 }
 
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1199px) {
 
-  #cadernoA5eA6, card-body {
+  #cadernoA5eA6,
+  card-body {
     margin-bottom: 91px;
   }
 
-  #cadernoDiscoA6, card-body  {
+  #cadernoDiscoA6,
+  card-body {
     margin-bottom: 41px;
   }
 
-  #cadernoKraftA6, card-body {
+  #cadernoKraftA6,
+  card-body {
     margin-bottom: 10px;
   }
-  
-  #cadernoArtesanal, card-body {
-    margin-bottom: 192px;
-  }
 
-  #marcadoresPagina, card-body {
+  #plannerSemanal, card-body {
     margin-bottom: 35px;
   }
 
-  #evolucaoCadernos, card-body {
-    margin-bottom: 10px;
+  #cadernoArtesanal,
+  card-body {
+    margin-bottom: 66px;
+  }
+
+  #marcadoresPagina,
+  card-body {
+    margin-bottom: 35px;
+  }
+
+  #servicosMarketing,
+  card-body {
+    margin-bottom: 141px;
+  }
+
+  #evolucaoCadernos,
+  card-body {
+    margin-bottom: 149px;
+  }
+
+  /*ATELIE*/
+  .imagem-perfil-atelie {
+    max-width: 100%;
+    width: 30%;
+  }
+
+  #resina {
+    padding: 3.5rem 0rem 0rem 0rem;
+  }
+
+  #descricaoResina h2 {
+    margin-bottom: -10px;
+    font-size: 2.8rem;
   }
   
-  #servicosMarketing, card-body {
-    margin-bottom: 167px;
+  #descricaoResina p {
+    font-size: 2.4rem;
+    line-height: 35px;
+    /* superior | direita | inferior | esquerda */
+    padding: 1rem 0.3rem 0.6rem 0.3rem;
+    margin-top: -1rem;
   }
 
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) {
 
-  #cadernoA5eA6, card-body {
+  #cadernoA5eA6,
+  card-body {
     margin-bottom: 41px;
   }
 
-  #cadernoDiscoA6, card-body  {
+  #cadernoDiscoA6,
+  card-body {
     margin-bottom: 35px;
   }
 
-  #marcadoresPagina, card-body {
+  #marcadoresPagina,
+  card-body {
     margin-bottom: 10px;
   }
 
-  #cadernoArtesanal, card-body {
-    margin-bottom: 52px;
+  #cadernoArtesanal,
+  card-body {
+    margin-bottom: 91px;
   }
 
-  #evolucaoCadernos, card-body {
-    margin-bottom: 10px;
-  }
-  
-  #servicosMarketing, card-body {
+  #servicosMarketing,
+  card-body {
     margin-bottom: 116px;
   }
 
+  #evolucaoCadernos,
+  card-body {
+    margin-bottom: 10px;
+  }
+
+  /* ATELIE */
+  .imagem-perfil-atelie {
+    max-width: 100%;
+    width: 30%;
+  }
+
+  #capaAtelie h1 {
+    font-size: 8rem;
+    line-height: 5rem;
+  }
+
+  #resina h2 {
+    font-size: 2rem;
+  }
+  
+  #descricaoResina p {
+    font-size: 2rem;
+    line-height: 28px;
+    /* superior | direita | inferior | esquerda */
+    padding: 1rem 0.3rem 0.6rem 0.3rem;
+    margin-top: -1.5rem;
+  }
+
 }
 
-@media screen and (max-width: 770px){
+@media screen and (max-width: 770px) {
 
-  #cadernoA5eA6, card-body {
+  #cadernoA5eA6,
+  card-body {
     margin-bottom: 36px;
   }
 
-  #cadernoA6, card-body {
+  #cadernoA6,
+  card-body {
     margin-bottom: 10px;
   }
 
-  #cadernoDiscoA6, card-body  {
+  #cadernoDiscoA6,
+  card-body {
     margin-bottom: 35px;
   }
 
-  #cadernoKraftA6, card-body {
+  #cadernoKraftA6,
+  card-body {
     margin-bottom: 10px;
   }
 
-  #cadernoArtesanal, card-body {
-    margin-bottom: 53px;
+  #cadernoArtesanal,
+  card-body {
+    margin-bottom: 91px;
   }
 
-  #marcadoresPagina, card-body {
+  #marcadoresPagina,
+  card-body {
     margin-bottom: 10px;
   }
 
-  #evolucaoCadernos, card-body {
+  #evolucaoCadernos,
+  card-body {
     margin-bottom: 10px;
   }
 
-  #servicosMarketing, card-body {
+  #servicosMarketing,
+  card-body {
     margin-bottom: 116px;
   }
 
@@ -641,28 +923,60 @@ footer p {
     height: 40px;
   }
 
+  /*ATELIE */
+
+  #resina {
+    padding: 3.5rem 0rem 0rem 0rem;
+  }
+
+  #resina h2 {
+    font-size: 2.4rem;
+  }
+  
+  #descricaoResina p {
+    font-size: 2rem;
+    line-height: 30px;
+    /* superior | direita | inferior | esquerda */
+    padding: 1rem 0.3rem 0.6rem 0.3rem;
+    margin-top: -1.5rem;
+  }
+  
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
 
-  #cadernoA5eA6, card-body {
+  #cadernoA5eA6,
+  card-body {
     margin-bottom: 110px;
   }
 
-  #cadernoDiscoA6, card-body  {
+  #cadernoDiscoA6,
+  card-body {
     margin-bottom: 10px;
   }
 
-  #cadernoKraftA6, card-body {
+  #cadernoKraftA6,
+  card-body {
     margin-bottom: 35px;
   }
 
-  #servicosMarketing, card-body {
+  #plannerSemanal, card-body {
+    margin-bottom: 110px;
+  }
+
+  #marcadoresPagina,
+  card-body {
+    margin-bottom: 35px;
+  }
+
+  #servicosMarketing,
+  card-body {
     margin-bottom: 140px;
   }
 
-  #cadernoArtesanal, card-body {
-    margin-bottom: 78px;
+  #cadernoArtesanal,
+  card-body {
+    margin-bottom: 117px;
   }
 
   #telegram img {
@@ -675,14 +989,48 @@ footer p {
     margin-top: 2px;
   }
 
+  /* ATELIE */
+  #capaAtelie {
+    height: 32rem;
+  }
+
+  #resina {
+    /* superior | direita | inferior | esquerda */
+    padding: 1rem 4rem 1rem 4rem;
+  }
+
+  .imagem-perfil-atelie {
+    max-width: 100%;
+    width: 35%;
+  }
+
+  .fundo {
+    background-image: url(/imagens/fundos/flowers-4931217.png);
+    background-size: contain;
+    background-repeat: repeat;
+  }
+
+  #resina h2 {
+    padding-top: 2.7rem;
+    font-size: 3rem;
+  }
+  
+  #descricaoResina p {
+    font-size: 2.7rem;
+    line-height: 40px;
+    /* superior | direita | inferior | esquerda */
+    padding: 1rem 0.3rem 0.6rem 0.3rem;
+    margin-top: -1.5rem;
+  }
+
 }
 
-@media screen and (max-width: 575px){
+@media screen and (max-width: 575px) {
 
   #capa h1 {
     font-size: 38px;
   }
-  
+
   #capa h2 {
     font-size: 20px;
   }
@@ -736,23 +1084,37 @@ footer p {
     min-width: 300px !important;
   }
 
-  #cadernoA5eA6, card-body {
+  #cadernoA5eA6,
+  card-body {
     margin-bottom: 10px !important;
   }
 
-  #cadernoKraftA6, card-body {
+  #cadernoKraftA6,
+  card-body {
     margin-bottom: 10px !important;
   }
 
-  #cadernoArtesanal, card-body {
-    margin-bottom: 10px !important;
-  }
-
-  #evolucaoCadernos, card-body {
+  #plannerSemanal, card-body {
     margin-bottom: 10px;
   }
-  
-  #servicosMarketing, card-body {
+
+  #marcadoresPagina,
+  card-body {
+    margin-bottom: 10px;
+  }
+
+  #cadernoArtesanal,
+  card-body {
+    margin-bottom: 10px !important;
+  }
+
+  #evolucaoCadernos,
+  card-body {
+    margin-bottom: 10px;
+  }
+
+  #servicosMarketing,
+  card-body {
     margin-bottom: 10px !important;
   }
 
@@ -761,18 +1123,39 @@ footer p {
     height: 40px;
   }
 
-  #contato .form-group {
+  #contatoAtelie .form-group {
     width: auto;
+  }
+
+  /* ATELIE */
+
+  .imagem-perfil-atelie {
+    height: auto;
+    width: 30%;
+    max-width: 100%;
+  }
+
+  #capaAtelie {
+    height: 30rem;
+  }
+
+  #resina {
+    margin-top: -2rem;
+    padding: 15px;
+  }
+
+  #resina .img-fluid {
+    margin-bottom: 20px;
   }
 
 }
 
-@media screen and (max-width: 470px){
+@media screen and (max-width: 470px) {
 
   #capa h1 {
     font-size: 33px;
   }
-  
+
   #capa h2 {
     font-size: 18px;
   }
@@ -806,9 +1189,36 @@ footer p {
     font-size: 24px;
   }
 
+  #novidades, #produtos, #servicos {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  /* ATELIE */
+  #capaAtelie {
+    height: 35rem;
+  }
+
+  #resina {
+    padding: 2.4rem;
+  }
+
+  #resina h2 {
+    padding-top: 2rem;
+    font-size: 2.5rem;
+  }
+
+  #descricaoResina p {
+    font-size: 2.6rem;
+  }
+
+  #resina .img-fluid {
+    margin-bottom: 20px;
+  }
+
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
 
   .imagensProdutos {
     width: 100% !important;
@@ -833,5 +1243,18 @@ footer p {
   #sobre p {
     font-size: 24px;
   }
-  
+
+  /* ATELIE */
+  #capaAtelie {
+    height: 35rem;
+  }
+
+  #resina {
+    padding: 15px;
+  }
+
+  #resina .img-fluid {
+    margin-bottom: 20px;
+  }
+
 }
